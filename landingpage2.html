@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .section1 {
+            position: relative;
+            /* Make sure the parent element is positioned */
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20%;
+            overflow: hidden;
+            /* Hide overflow for a cleaner effect */
+        }
+
+        .section1::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('keyboard.jpg');
+            background-position: center;
+            background-size: cover;
+            filter: blur(2px);
+            /* This blurs the background image */
+            z-index: -1;
+            /* Send it behind the content */
+        }
+
+        .section2 {
+            position: relative;
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            padding: 0 20%;
+            overflow: hidden;
+        }
+
+        .section2::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(universe.jpg);
+            background-position: center;
+            background-size: cover;
+            filter: blur(2px);
+            /* This blurs the background image */
+            z-index: -1;
+            /* Send it behind the content */
+        }
+
+
+        * {
+            font-family: sans-serif;
+
+
+        }
+
+        .btn {
+            background-color: darkslategray;
+            border: 2px solid darkslategray;
+            color: antiquewhite;
+            padding: 5px;
+            border-radius: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .title {
+            font-size: 50px;
+            font-weight: 400;
+
+        }
+
+        .page {
+            background-color: black;
+        }
+
+        .line1 {
+            border: solid black;
+        }
+
+
+
+        .title2 {
+            text-align: center;
+            font-size: 50px;
+            color: rgb(0, 0, 0);
+            font-weight: 400;
+        }
+
+        .subtitle2 {
+            margin-left: 20px;
+            margin-right: 20px;
+
+        }
+
+
+        .section3 {
+            position: relative;
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            padding: 0 20%;
+            overflow: hidden;
+        }
+
+        .section3::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(vision.jpg);
+            background-position: center;
+            background-size: cover;
+            filter: blur(2px);
+            z-index: -1;
+        }
+
+        .title3 {
+            text-align: center;
+            font-size: 50px;
+            font-weight: 400;
+            color: rgb(254, 254, 254);
+        }
+
+        .subtitle3 {
+            margin-left: 20px;
+            margin-right: 20px;
+            color: white;
+        }
+
+        .image {
+          /*  width: 50px;*/
+            height: 45vh;
+            width: 30vb;
+            flex: 1;
+            text-align: center;
+
+        }
+
+        .section4 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 80vh;
+        }
+
+        .title4 {
+            color: aliceblue;
+            flex: 1;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+
+<body class="page">
+    <main>
+        <section class="section1">
+            <h1 class="title"> <b><u>Stud Monkey Solutions</u></b></h1>
+            <p class="subtitle1"><b>At Stud Monkey we are dedicated to provide you excellent services in the fields of
+                    Software developement & management.</b></p>
+
+            <p class="subtitle1"><b>Our team of expert developers are ready for all kinds of software based
+                    solutions</b></p>
+            <p class="subtitle1"><b>We at Stud Monkey believe in all around customer satisfaction, We do not assume are
+                    customer as customers but as our family member and its our responsibility to help a family member
+                </b></p>
+            <div>
+                <button class="btn">Lets go...</button>
+                <button class="btn">Learn more</button>
+            </div>
+        </section>
+        <hr class="line1">
+
+        <section class="section2">
+            <h1 class="title2"><b><u>Our Believes...</u></b></h1>
+            <p class="subtitile2"><b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur corrupti
+                    incidunt suscipit. Animi
+                    officia explicabo ullam ut incidunt maiores, nostrum cupiditate ratione molestias veniam provident
+                    consequuntur unde odio pariatur, eius fuga ipsam tenetur? Dolore, harum? Quae minima doloremque
+                    eveniet tempore, fugit, non ea animi dolorem impedit recusandae beatae nostrum placeat.</b></p>
+        </section>
+        <hr class="line1">
+        <section class="section3">
+            <h1 class="title3"><b><u>Our vision...</u></b></h1>
+            <p class="subtitle3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque assumenda dignissimos
+                omnis harum odit, velit fuga deleniti. Perferendis ex, aliquid, ab ipsa quae cum provident officia
+                assumenda laudantium voluptas libero reiciendis labore inventore, quam quas aperiam? Iure vero
+                consequuntur a reprehenderit ad distinctio ab architecto itaque eius? Est id sequi voluptas totam quasi,
+                iusto quaerat libero laudantium suscipit debitis sit.</p>
+        </section>
+        <hr class="line1">
+        <section class="section4">
+            <h1 class="title4"><b><u>Founders words...</u></b></h1><br>
+            <h2 class="title4"><B>Ananya Srivastava</B></h2>
+            <img class="image" src="tanay.jpg" alt="Fouder's pic">
+
+        </section>
+
+
+
+    </main>
+</body>
+
+</html>
